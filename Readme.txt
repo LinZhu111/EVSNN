@@ -1,21 +1,4 @@
-
-# Event-based Video Reconstruction via Potential-assisted Spiking Neural Network
-Minimal code for running inference on spiking neural network trained for Event-based Video Reconstruction via Potential-assisted Spiking Neural Network, CVPR2022.
-
-<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
-
-<!-- code_chunk_output -->
-
-* [EVSNN](#evsnn)
-	* [Requirements](#requirements)
-	* [Folder Structure](#folder-structure)
-	* [Network](#network)
-	* [Usage](#usage)
-	* [Dataset](#dataset)
-	* [License](#license)
-
-<!-- /code_chunk_output -->
-
+##Minimal code for running inference on spiking neural network trained for Event-based Video Reconstruction via Potential-assisted Spiking Neural Network, CVPR2022.
 =======================================================================
 ## Requirements
 
