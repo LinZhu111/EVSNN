@@ -1,0 +1,52 @@
+Minimal code for running inference on spiking neural network trained for Event-based Video Reconstruction via Potential-assisted Spiking Neural Network, submitted to CVPR2022.
+=======================================================================
+## Requirements
+
+* Python >= 3.7 (3.9 recommended)
+* PyTorch >= 1.6 (1.9 recommended)
+* Spikingjelly >= 0.0.0.0.4 (lastest version)
+======================================================================
+## Running with Anaconda
+cuda_version=10.2
+conda create -n snnrec 
+conda activate snnrec 
+conda install -y pytorch torchvision cudatoolkit=$cuda_version -c pytorch
+conda install pandas
+
+## Install Spikingjelly
+pip install spikingjelly
+
+=====================================================================
+## Inference
+Usage:
+python rec_snn.py [-network NETWORK] [-path_to_pretrain_models PATH_TO_PRETRAIN_MODELS] [-path_to_event_files PATH_TO_EVENT_FILES] [-save_path SAVE_PATH] [-height HEIGHT] [-width WIDTH] [-num_events_per_pixel NUM_EVENTS_PER_PIXEL]
+
+For example, to run EVSNN:
+python rec_snn.py -network EVSNN_LIF_final -path_to_pretrain_models ./pretrained_models/EVSNN.pth
+
+To run PA-EVSNN
+python rec_snn.py -network PAEVSNN_LIF_AMPLIF_final -path_to_pretrain_models ./pretrained_models/PAEVSNN.pth
+
+======================================================================
+## Folder Structure
+  minimal_code_snn/
+  ©¦
+  ©À©¤©¤ rec_snn.py - evaluation of trained model
+  ©¦
+  ©À©¤©¤ data/ - default directory for storing input data
+  ©¦
+  ©À©¤©¤ model/ - models, losses, and metrics
+  ©¦   ©À©¤©¤ dataset.py
+  ©¦   ©À©¤©¤ snn_network.py
+  ©¦
+  ©À©¤©¤ neurons/  
+  ©¦	 ©À©¤©¤ spiking_neuron.py - spiking neurons, MP neurons
+  ©¦
+  ©À©¤©¤ results/  - generated results are saved here
+  ©¦  
+  ©¸©¤©¤ utils/ - small utility functions
+      ©À©¤©¤ util.py
+      ©¸©¤©¤ ...
+  
+
+
