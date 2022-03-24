@@ -1,4 +1,4 @@
-Minimal code for running inference on spiking neural network trained for Event-based Video Reconstruction via Potential-assisted Spiking Neural Network, submitted to CVPR2022.
+Minimal code for running inference on spiking neural network trained for Event-based Video Reconstruction via Potential-assisted Spiking Neural Network, CVPR2022.
 =======================================================================
 ## Requirements
 
@@ -30,23 +30,23 @@ python rec_snn.py -network PAEVSNN_LIF_AMPLIF_final -path_to_pretrain_models ./p
 ======================================================================
 ## Folder Structure
   minimal_code_snn/
-  ©¦
-  ©À©¤©¤ rec_snn.py - evaluation of trained model
-  ©¦
-  ©À©¤©¤ data/ - default directory for storing input data
-  ©¦
-  ©À©¤©¤ model/ - models, losses, and metrics
-  ©¦   ©À©¤©¤ dataset.py
-  ©¦   ©À©¤©¤ snn_network.py
-  ©¦
-  ©À©¤©¤ neurons/  
-  ©¦	 ©À©¤©¤ spiking_neuron.py - spiking neurons, MP neurons
-  ©¦
-  ©À©¤©¤ results/  - generated results are saved here
-  ©¦  
-  ©¸©¤©¤ utils/ - small utility functions
-      ©À©¤©¤ util.py
-      ©¸©¤©¤ ...
+  |
+  â”œâ”€â”€ rec_snn.py - evaluation of trained model
+  |
+  â”œâ”€â”€ data/ - default directory for storing input data
+  |
+  â”œâ”€â”€ model/ - models, losses, and metrics
+  |   â”œâ”€â”€ dataset.py
+  |   â”œâ”€â”€ snn_network.py
+  |
+  â”œâ”€â”€ neurons/  
+  |	 â”œâ”€â”€ spiking_neuron.py - spiking neurons, MP neurons
+  |
+  â”œâ”€â”€ results/  - generated results are saved here
+  |  
+  â””â”€â”€ utils/ - small utility functions
+      â”œâ”€â”€ util.py
+      â””â”€â”€ ...
   
 
 
