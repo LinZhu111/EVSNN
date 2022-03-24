@@ -1,4 +1,4 @@
-##Minimal code for running inference on spiking neural network trained for Event-based Video Reconstruction via Potential-assisted Spiking Neural Network, CVPR2022.
+## Minimal code for running inference on spiking neural network trained for Event-based Video Reconstruction via Potential-assisted Spiking Neural Network, CVPR2022.
 =======================================================================
 ## Requirements
 
