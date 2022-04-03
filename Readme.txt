@@ -4,7 +4,7 @@
 
 * Python >= 3.7 (3.9 recommended)
 * PyTorch >= 1.6 (1.9 recommended)
-* Spikingjelly >= 0.0.0.0.4 (lastest version)
+* Spikingjelly = 0.0.0.0.6 
 ======================================================================
 ## Running with Anaconda
 cuda_version=10.2
@@ -14,7 +14,7 @@ conda install -y pytorch torchvision cudatoolkit=$cuda_version -c pytorch
 conda install pandas
 
 ## Install Spikingjelly
-pip install spikingjelly
+pip install spikingjelly==0.0.0.0.6
 
 =====================================================================
 ## Inference
